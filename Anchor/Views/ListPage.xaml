@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Anchor.Views.ListPage"
+    Title="Anchor Example">
+
+    <ContentPage.Content>
+            <!-- ListView Start -->
+            <ListView
+                      RowHeight="70"
+                      SeparatorVisibility="Default"
+                      BackgroundColor="White"
+                      ItemTapped="ListView_ItemTapped">
+                <ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>LineChart</x:String>
+                        <x:String>BarChart</x:String>
+                        <x:String>PieChart</x:String>
+                        <x:String>RadarChart</x:String>
+                        <x:String>PolarChart</x:String>
+                        <x:String>ScatterChart</x:String>
+                    </x:Array>
+                </ListView.ItemsSource>
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <TextCell Text="{Binding .}" />
+      </DataTemplate>
+    </ListView.ItemTemplate>
+            </ListView>
+            <!-- ListView End -->
+    </ContentPage.Content>
+</ContentPage>

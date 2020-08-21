@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Anchor.Views.BubbleChartPage"
+    xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+    Title="Bubble Chart">
+    <ContentPage.Content>
+        <StackLayout>
+            <!-- Canvas Start -->
+            <skia:SKCanvasView x:Name="canvas"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                BackgroundColor="White"
+                   PaintSurface="OnCanvasViewPaintSurface"
+                                Margin="0,50,0,0">
+            </skia:SKCanvasView>
+            <!-- Canvas End -->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

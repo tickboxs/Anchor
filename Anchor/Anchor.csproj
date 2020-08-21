@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.847" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="SkiaSharp" Version="1.68.3" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.3" />
+    <PackageReference Include="TouchTracking.Forms" Version="1.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sources\" />
+    <Folder Include="Sources\Domains\" />
+    <Folder Include="Sources\Charts\" />
+    <Folder Include="Sources\Domains\PieChart\" />
+    <Folder Include="Sources\Domains\BarChart\" />
+    <Folder Include="Sources\Domains\LineChart\" />
+    <Folder Include="Sources\Domains\ScatterChart\" />
+    <Folder Include="Sources\Shapes\" />
+    <Folder Include="Sources\Domains\RadarChart\" />
+    <Folder Include="Sources\Utils\" />
+    <Folder Include="Sources\Domains\PolarChart\" />
+    <Folder Include="Sources\Styles\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
+    <Folder Include="Sources\Accessories\" />
+    <Folder Include="Sources\Animations\" />
+    <Folder Include="Sources\Validators\" />
+    <Folder Include="Sources\Extensions\" />
+  </ItemGroup>
+</Project>
